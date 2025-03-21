@@ -1,0 +1,142 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+label.logo img{
+  width: 200px;
+  padding: 0 100px;
+  line-height: 80px;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  height: 80px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+ 
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+nav li{
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
+}
+nav a {
+  color:rgb(255, 145, 0);
+  font-size: 18px;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;  
+}
+a.active,a:hover{
+  border: 1px solid rgb(255, 145, 0);
+  transition: .5s;
+}
+nav #icon{
+  color:rgb(255, 145, 0);
+  font-size: 30px;
+  line-height: 80px;
+  float:right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color:rgb(255, 145, 0);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.who-us{
+   
+  padding: 20px 50px;
+  background: rgb(0, 0, 0);
+} 
+.who-us p{
+  color: rgb(255, 145, 0);
+  font-size: 1.5em;
+}
+.who-us img{
+  width: 500px;
+}
+ 
+
+@media(max-width:1048){
+  nav ul{
+    margin-right: 20px;
+  }
+  nav a{
+    font-size: 17px;
+  }
+}
+@media(max-width:909px){
+  nav #icon{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 80px;
+    left:-100%;
+    text-align: center;
+    transform: all .5s;
+
+  }
+  nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 2.2em;
+  }
+  a.active,a:hover{
+    border: none;
+    color: black;
+    border-radius: 15px;
+    background-color: rgb(255, 145, 0);
+  }
+  nav ul.show{
+    left: 0;
+
+  }
+  label.logo img{
+    width: 200px;
+    padding: 0 50px;
+  }
+  .who-us p{
+    font-size: 1.8em;
+  }
+  .who-us img{
+    width: 325px;
+  }
+
+}
