@@ -3,10 +3,15 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+  background-color: rgb(66, 95, 69);
 }
 label.logo img{
   width: 200px;
-  padding: 0 100px;
+  padding: 5px 100px;
   line-height: 80px;
 }
 body{
@@ -15,7 +20,7 @@ body{
 nav{
   height: 80px;
   width: 100%;
-  background: rgb(0, 0, 0);
+  background-color:#3d342b ;
  
 }
 nav ul{
@@ -32,10 +37,11 @@ nav a {
   font-size: 18px;
   border: 1px solid transparent;
   padding: 7px 10px;
-  border-radius: 3px;  
+  border-radius: 3px;
+  color:#EFE8D9;
 }
 a.active,a:hover{
-  border: 1px solid rgb(255, 145, 0);
+  border: 1px solid rgb(255, 255, 255);
   transition: .5s;
 }
 nav #icon{
@@ -56,7 +62,7 @@ nav #icon{
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color:rgb(255, 145, 0);
+  background-color:rgba(255, 255, 255, 0.858);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -73,13 +79,27 @@ nav #icon{
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+select{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(66, 95, 69);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: none;
+}
+select:hover{
+    background-color: rgb(205, 248, 167);
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
 .who-us{
-   
+ 
   padding: 20px 50px;
-  background: rgb(0, 0, 0);
+  background-color: rgb(66, 95, 69);
 } 
 .who-us p{
-  color: rgb(255, 145, 0);
+  color: rgb(231, 231, 231);
   font-size: 1.5em;
 }
 .who-us img{
@@ -103,7 +123,7 @@ nav #icon{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: black;
+    background-color:#3d342b ;
     top: 80px;
     left:-100%;
     text-align: center;
@@ -120,9 +140,9 @@ nav #icon{
   }
   a.active,a:hover{
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 15px;
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(66, 95, 69);
   }
   nav ul.show{
     left: 0;
@@ -138,5 +158,9 @@ nav #icon{
   .who-us img{
     width: 325px;
   }
+  select{
+      width: 200px;
+      height: 50px;
+      font-size: 20px;}
 
 }
